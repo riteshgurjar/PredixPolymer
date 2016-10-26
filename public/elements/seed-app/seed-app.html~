@@ -127,7 +127,7 @@
               "path": "/dashboards",
               "icon": "fa-tachometer"
             }, {
-              "label": "Monthwise Event Rate",
+              "label": "Blank Page",
               "path": "/blankpage",
               "icon": "fa-file-o"
             }]

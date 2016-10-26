@@ -3,14 +3,16 @@
 <link rel="import" href="../../bower_components/px-vis-timeseries/px-vis-timeseries.html">
 <link rel="import" href="../../bower_components/px-datetime-picker/px-datetime-picker.html">
 <link rel="import" href="../../bower_components/iron-ajax/iron-ajax.html">
-<link rel="import" href="../../bower_components/px-simple-bar-chart/px-simple-bar-chart.html">
 
 <dom-module id="blankpage-view">
   <template>
+    <blank-card id="myCard">
+      An example of a blank card without any content (except for this brief description).  Replace this with the actual content for your application...ritz
+    </blank-card>
 
-    <px-card header-text="Monthwise fail count from 2013 to 2016">
+    <px-card header-text="Time Series Card">
 
-     <!-- <px-datetime-picker></px-datetime-picker>
+      <px-datetime-picker></px-datetime-picker>
 
       <px-vis-timeseries
         width="800"
@@ -22,12 +24,7 @@
         selection-type= "xy"
         chart-data={{tsChartData}}
       </px-vis-timeseries>
-      <iron-ajax url="https://rg-springboot-db-dataproject.run.aws-usw02-pr.ice.predix.io/findallTest" id="tsQueryElement" last-response="{{rawTsData}}" auto><iron-ajax>-->
-
-<px-simple-bar-chart width="auto" height="350" chart-data='[[17,25,15,15],[29,22,11,14],[19,11,23,32],[13,22,27,15],[23,21,19,12],[33,12,19,24],[23,31,15,18],[22,29,11,16],[21,26,20,12],[19,17,16,22],[16,18,19,21],[24,29,17,30]]' x-axis-config='{"title":"2013","labelPosition":"center","orientation":"left"}' enableTooltip='true' legend-labels='["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]' colors='["#5da5da","#faa43a","#60bd68","#f17cb0","#b2912f","#b276b2","#decf3f","#f15854","#4d4d4d"]'></px-simple-bar-chart>
-
-<!--<iron-ajax url="https://rg-springboot-db-dataproject.run.aws-usw02-pr.ice.predix.io/findallTest" id="tsQueryElement" last-response="{{rawTsData}}" auto><iron-ajax>-->
-
+      <iron-ajax url="https://rg-springboot-db-dataproject.run.aws-usw02-pr.ice.predix.io/findallTest" id="tsQueryElement" last-response="{{rawTsData}}" auto><iron-ajax>
     </px-card>
   </template>
   <script>

@@ -19,7 +19,7 @@
     "polymer": "^1.6.1",
     "iron-ajax": "~1.4.3",
     "iron-pages": "~1.0.8",
-    "px-view": "~1.0.1",
+    "px-view": "^1.0.0",
     "q": "^1.0.0",
     "app-route": "PolymerElements/app-route#^0.9.1",
     "px-overlay": "^0.3.0",
@@ -35,7 +35,7 @@
     "px-theme": "^1.1.2",
     "px-vis-timeseries": "^0.3.0",
     "px-vis-xy-chart": "^0.1.0",
-    "px-view": "^1.0.0"
+    "px-datetime-picker": "^0.2.2"
   },
   "devDependencies": {
     "px-forms-design": "^0.3.17",
@@ -54,5 +54,8 @@
     "px-code-design": "^0.2.11",
     "px-headings-design": "^0.2.14",
     "px-buttons-design": "^0.4.26"
+  },
+  "resolutions": {
+    "px-functions-design": "~0.3.3"
   }
 }
